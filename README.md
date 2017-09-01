@@ -1,2 +1,2 @@
 # GwenAntiAura
-Basic Configs for Gwen (AntiAura is recommended for basic Gwen setup)
+AntiAura Configs for Gwen
