@@ -35,7 +35,7 @@ IgnoreUnknownTeleportCause: true
 Violations:
   #The command to be executed when a player is detected for any check.
   #If you specify a kick from the check itself (e.g. add text to AngleCommand), KickCommand will be overwritten for that specific check.
-  KickCommand: kick %PLAYER% %HACKNAME% is not allowed on this server!#broadcast %PLAYER% was kicked for %HACKNAME%! (%CHECKNAME%)
+  KickCommand: "ba kick {player} gwen &4&lGWEN&c: Hacking/cheating. This is your oppertunity to turn off your hacks!!#broadcast %PLAYER% was kicked for %HACKNAME%! (%CHECKNAME%)"
   #If this is true, all violation commands will be executed. For example, hack violations 6 = ALL commands before "6" will run.
   #If this is false, only one command will be executed at a time. Setting this to false does NOT disable commands.
   ExecuteAllCommands: true
@@ -45,8 +45,9 @@ Violations:
   ViolationDecreasePerHour: 1
   #If a person has been detected for hacks the amount of times as the value below, the command will be executed.
   #You can add new lines to this too! For example you could copy the line starting with "5", rename it to "10", and you'd have a new command at 10 violations!
-  2: tempban %PLAYER% 10m You have been temporarily banned for hacking. Please disable your hacks!
-  5: ban %PLAYER% You have been banned for using the %HACKNAME% hack %HACKAMOUNT% times!
+  1: "ba kick {player} gwen &4&lGWEN&c: Hacking/cheating. This is your oppertunity to turn off your hacks!"
+  2: tempban %PLAYER% 10m
+  5: "ba ban %player% gwen &8&l[&4&lGWEN&8&l]&c: You have been banned for using the %HACKNAME% hack %HACKAMOUNT% times!"
 
 
 #The SuperThreshold is, basically, a way of trying to cut out false positives.
